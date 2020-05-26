@@ -1,0 +1,135 @@
+<!DOCTYPE html> <html lang="en"> <head> <title>Fitness Revolution</title> <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="FRformat.css">
+<style>
+form{
+	font-size: 15px;
+}
+
+p{
+
+ width:150px;
+display: inline-block;
+text-align:left;
+
+}
+
+.gender p {
+
+text-align:right;
+
+}
+.diet select {
+display:inline-block;
+width: 100px;
+}
+
+</style>
+
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=500,height=400')
+  message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
+  message += "<li><b>email: </b>" + document.form1.email.value;
+  message += "<li><b>PHONE: </b>" + document.form1.phone.value;
+  message += "<li><b>Gender: </b>" + document.form1.gender.value; 
+  message += "<li><b>preference: </b>" + document.form1.crossfit.value;
+  message += "<li><b>preference: </b>" + document.form1.powerlifting.value;
+  message += "<li><b>preference: </b>" + document.form1.bodybuilding.value;
+  message += "<li><b>Diet: </b>" + document.form1.diet.value+ "</ul>";
+
+  DispWin.document.write(message);
+}
+</script>
+ </head>
+
+ <body>
+ <header><h1>Fitness Revolution: Home of Fitness and health</h1></header>
+
+<div class = "row">
+
+<div class = "column left">
+	<nav>
+	<ul>
+	
+	<li><u><a href="index.html">Home</a><u></li>
+	<li><u><a href="contact.html">contacts</a><u></li>
+	<li><u><a href="socialmedia.html">social media</a><u></li>
+	<li><u><a href="articles.html">Articles</a><u></li>
+	<li><u><a href="nutrition.html">Nutrition</a><u></li>
+	<li><u><a href="workout.html">Work outs</a><u></li>
+	</ul>
+</nav>
+<center><img src = "bicep_curl.gif" width ="300" height="300"><center>	
+</div>
+
+
+
+<div class= "column middle">
+<h2><u>Contacts</u></h2>
+</div>
+<div class= "column middle1">
+
+<fieldset>
+<legend>Enter the following information so we may contact you if you have further question</legend>
+<form name="form1" action:mailto:lueole_alemgena@yahoo.com>
+
+<p><b>Name:</b>
+ <input TYPE="TEXT" SIZE="20" NAME="yourname">
+</p>
+
+<p><b>Email:</b> 
+<input TYPE="TEXT" SIZE="30" NAME="email">
+</p>
+
+<p><b>Phone: </b> 
+<input TYPE="TEXT" SIZE="15" NAME="phone">
+</p>
+
+<section class = gender>
+<p>Gender:</p>
+
+<p><b>Male</b></p>
+<input type="radio" id="male" name="gender" value="male">
+
+<p><b>Female</b></p>
+<input type="radio" id="female" name="gender" value="female">
+
+<p><b>Other</b></p>
+<input type="radio" id="other" name="gender" value="other">
+
+</section>
+
+<section class= pre>
+<input type="checkbox" id="crossfit" name="crossfit" value="crossfit">
+<p>i like crossfit</p>
+
+<input type="checkbox" id="powerlifting" name="powerlifting" value="powerlifting">
+<p>i like powerlifting</p>
+<input type="checkbox" id="bodybuilding" name="bodybuilding" value="bodybuilding">
+<p>i like bodybuilding</p>
+</section>
+
+<p>Whats your diet like?x</p>
+<section class =diet> 
+
+<select id="diet">
+  <option value="poor">poor</option>
+  <option value="average">average</option>
+  <option value="good">good</option>
+  <option value="great">great</option>
+</select>
+</section>
+
+<p><input TYPE="BUTTON" VALUE="summit" onClick="display();"></p>
+<input type="reset" value="Reset" />
+
+</fieldset>
+</form>
+
+
+
+</div>
+</div>
+<footer>created my and funded Lueole Alemgena Email: <a href="mailto:lueole_alemgena@yahoo.com">lueole_alemgena@yahoo.com</a></footer></footer>
+</body> </html>

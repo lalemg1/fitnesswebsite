@@ -1,0 +1,153 @@
+
+header h1{
+	background-color:#d9514eff;
+	font-family: Rockwell;
+	text-align:center; 
+	margin:0;
+	padding:70px;	
+	border: 5px solid black;
+	background-image: url(squat.gif);
+	color:#d9514eff;
+	
+  background-size: auto;
+	}
+
+body{	background-color:#669db3ff;
+	font-family: Rockwell;
+	font-size: 15px;
+	}
+
+.column {  
+ 
+float:left;
+padding:10px;
+height:300px;	
+width: 300px;
+}
+
+.left,{
+
+width:auto;
+background-color:#d9514eff;
+height: auto;
+border: 5px solid black;
+padding:5px;
+
+}
+
+.middle{
+float:left ;
+width:auto;
+color:#2C3539;
+text-align:center;
+height:auto;
+margin-left:350px;
+
+}
+.middle1{
+float:left;
+width:800px;
+color:#2C3539;
+text-align:center;
+height:auto;
+
+
+}
+
+.middle h2{ 
+background-color:#d9514eff;
+border: 3px solid black;
+color: #2C3539;
+
+}
+
+.middle1 { 
+background-color:#d9514eff;
+border: 5px solid black;
+color: #2C3539}
+
+footer{
+padding:10px;
+
+}
+img{padding:10px;}
+
+.row:after 
+{
+content: "";
+display: table;
+clear: both;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: autopx;
+  height:auto;
+
+  background-color: #d9514eff;
+  border: 5px solid black;
+
+	
+}
+
+nav li a {
+  display: block;
+  color: #2C3539;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+nav li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav li a.active {
+  background-color: #d9514eff;
+  color: #d9514eff;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #669db3ff;
+  color: white;
+}
+
+@media only screen and (max-width: 768px){
+header h1{text-align: center; height:100px;
+font-size:30px;color:#d9514eff; width:550px}
+body{ margin:0;}
+main{margin-left: 0;}
+nav{ float: left; width:550px; }
+nav li {display: inline-block; padding: 0.5em;}
+nav ul{text-align: center;}
+nav a {border-style: none;}
+h1,h2 {font-size: 120%; }
+p { font-size: 90%; }
+.middle1{width:100%;}
+iframe{ height:auto;width:auto;}
+img{height:200px; width:550px;}
+.middle{float: left;}
+
+}
+
+
+@media only screen and (max-width: 768px){
+header h1 {background-image: url(squat.gif);}
+h1,h2 {font-size: 100%; }
+p { font-size: 100%; }
+figure{ display: none }
+nav, nav ul, nav li {padding: 0;}
+nav li {display: block;}
+nav a {display: block; padding: 0.5em 0;
+border-bottom:2px ridge #00005d;
+.middle1{width:100px;}
+
+}
+
+
+
